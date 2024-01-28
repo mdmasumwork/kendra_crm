@@ -1,0 +1,136 @@
+header {
+  background-color: #C6CBD2;
+
+  .site-header-absolute {
+    display: flex;
+    padding: 16px 8px;
+
+    .site-branding {
+      flex-grow: 8;
+
+      a {
+        text-decoration: none;
+        color: #FF8626;
+      }
+    }
+
+    .main-navigation {
+      display: flex;
+      align-items: center;
+
+      .menu-primary-menu-container {
+        display: none;
+      }
+
+      button.burger-menu, button.burger-menu-close {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+
+        img {
+          width: 28px;
+          height: 28px;
+          color: #ffffff;
+
+          &:before {
+            font-size: 28px;
+          }
+        }
+      }
+
+      button.burger-menu-close {
+        display: none;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .site-header-conditional {
+    display: none;
+    width: 100vw;
+    margin-left: -8px;
+    padding: 8px 0;
+
+    .menu {
+      list-style: none;
+
+      .menu-item {
+        padding: 8px 0;
+
+        a {
+          color: #1c314B;
+          text-decoration: none;
+          font-size: 16px;
+
+          &:hover {
+          }
+
+          &:active {
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  header {
+    .site-header-absolute {
+      .site-branding {
+        img {
+          max-width: 272px;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header {
+    .site-header-absolute {
+      .main-navigation {
+        .menu-primary-menu-container {
+          display: block;
+
+          .menu {
+            list-style: none;
+            margin: unset;
+
+            .menu-item {
+              display: inline-block;
+
+              a {
+                padding: 8px 16px;
+                text-decoration: none;
+                font-weight: 600;
+                color: #1c314B;
+
+                &:hover {
+                  color: #FF8626;
+                }
+              }
+            }
+          }
+        }
+
+        button.burger-menu {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

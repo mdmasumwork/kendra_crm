@@ -1,0 +1,16 @@
+{
+  "name": "kendra-it-crm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --update --style=expanded public/assets/css/scss/:public/assets/css/build/",
+    "sass-prod": "sass --no-source-map --style=compressed public/assets/css/scss/:public/assets/css/build/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}
